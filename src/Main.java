@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
         Filme filme = new Filme();
 
-        filme.nome = "Dragon Ball";
-        filme.anoDeLancamento = 2012;
+        filme.setNome("Dragon Ball");
+        filme.setAnoDeLancamento(2012);
         filme.exibeFichaTecnica();
         filme.avalia(8);
         filme.avalia(5);
