@@ -8,8 +8,6 @@ public class Main {
         filme.avalia(8);
         filme.avalia(5);
         filme.avalia(10);
-        System.out.println(filme.somaDasAvaliacoes);
-        System.out.println(filme.totalDeAvaliacoes);
         System.out.println(filme.obterMedia());
     }
 }
