@@ -9,5 +9,6 @@ public class Main {
         filme.avalia(5);
         filme.avalia(10);
         System.out.println(filme.obterMedia());
+        System.out.println("Total de Avaliações: " + filme.getTotalDeAvaliacoes());
     }
 }
