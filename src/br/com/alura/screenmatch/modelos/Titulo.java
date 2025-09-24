@@ -52,7 +52,7 @@ public class Titulo {
 
 
     public void exibeFichaTecnica(){
-        System.out.println("Nome do br.com.alura.screenmatch.modelos.Filme: " + nome);
+        System.out.println("Nome do br.com.alura.screenmatch.modelos.br.com.alura.screenmatch.modelos.Filme: " + nome);
         System.out.println("Ano de Lançamento: " + anoDeLancamento);
     }
 
