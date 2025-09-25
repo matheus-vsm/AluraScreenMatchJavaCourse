@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AluraMinhasMusicasJavaCourse/AluraMinhasMusicasJavaCourse.iml" filepath="$PROJECT_DIR$/AluraMinhasMusicasJavaCourse/AluraMinhasMusicasJavaCourse.iml" />
       <module fileurl="file://$PROJECT_DIR$/AluraScreenMatchJavaCourse.iml" filepath="$PROJECT_DIR$/AluraScreenMatchJavaCourse.iml" />
     </modules>
   </component>
