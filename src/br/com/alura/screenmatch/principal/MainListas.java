@@ -7,6 +7,7 @@ import br.com.alura.screenmatch.modelos.Titulo;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class MainListas {
     public static void main(String[] args) {
@@ -14,7 +15,7 @@ public class MainListas {
         meuFilme.avalia(2);
         Filme outroFilme = new Filme("Avatar", 2023);
         outroFilme.avalia(5);
-        Filme filmeDoPaulo = new Filme("Algum", 200);
+        Filme filmeDoPaulo = new Filme("Algum", 2001);
         filmeDoPaulo.avalia(10);
         Serie lost = new Serie("Lost", 2000);
         
@@ -38,6 +39,9 @@ public class MainListas {
         Collections.sort(buscaPorArtista);
         System.out.println(buscaPorArtista);
         Collections.sort(lista);
+        System.out.println(lista);
+
+        lista.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
         System.out.println(lista);
     }
 }
