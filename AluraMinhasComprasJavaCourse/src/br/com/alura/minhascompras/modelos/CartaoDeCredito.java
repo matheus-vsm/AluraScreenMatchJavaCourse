@@ -8,7 +8,7 @@ public class CartaoDeCredito {
     private double saldo;
     private List<Compra> compras;
 
-    public CartaoDeCredito(double limite, List<Compra> compras) {
+    public CartaoDeCredito(double limite) {
         this.limite = limite;
         this.saldo = limite;
         this.compras = new ArrayList<>();
