@@ -25,8 +25,9 @@ public class Main {
             Compra compra = new Compra(descricao, valor);
 
             if (cartaoDeCredito.lancaCompra(compra)){
-                System.out.print("Compra Realizada!\nDigite 0 para Sair ou 1 para Continuar: ");
+                System.out.print("\nCompra Realizada!\nDigite 0 para Sair ou 1 para Continuar: ");
                 n = input.nextInt();
+                System.out.println();
             } else {
                 System.out.println("SALDO INSUFICIENTE!");
                 break;
