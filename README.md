@@ -4,3 +4,5 @@
 O projeto do curso "Java: Aplicando a Orientação a Objetos" se encontra [Aqui](https://github.com/matheus-vsm/AluraScreenMatchJavaCourse/tree/Java---Aplicando-a-Orienta%C3%A7%C3%A3o-a-Objetos);
 
 O projeto do curso "Java: Trabalhando com Listas e Coleções de Dados" se encontra [Aqui](https://github.com/matheus-vsm/AluraScreenMatchJavaCourse/tree/Java---Trabalhando-com-Listas-e-Cole%C3%A7%C3%B5es-de-Dados);
+
+O projeto do curso "Java: Consumindo API, Gravando Arquivos e Lidando com Erros" se encontra [Aqui](https://github.com/matheus-vsm/AluraScreenMatchJavaCourse/tree/Java---Trabalhando-com-Listas-e-Cole%C3%A7%C3%B5es-de-Dados);
