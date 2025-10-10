@@ -18,23 +18,16 @@ public class Main {
         List<Endereco> enderecos = new ArrayList<>();
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
-
         while (!busca.equalsIgnoreCase("sair")) {
             System.out.print("Digite um CEP ou 'sair' para cancelar: ");
             busca = input.nextLine();
 
             if (busca.equalsIgnoreCase("sair")) { break; }
 
-            String url = "https://viacep.com.br/ws/" + busca + "/json/";
-
             try {
-                HttpClient client = HttpClient.newHttpClient();
-                HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
-                HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+                ConsultaCep consultaCep = new ConsultaCep();
 
-                String json = response.body();
-
-                EnderecoViaCep meuEnderecoViaCep = gson.fromJson(json, EnderecoViaCep.class);
+                EnderecoViaCep meuEnderecoViaCep = consultaCep.buscaEndereco(busca);
                 Endereco meuEndereco = new Endereco(meuEnderecoViaCep);
 
                 if (meuEndereco.getCep() == null) {
@@ -50,6 +43,10 @@ public class Main {
             FileWriter escrita = new FileWriter("enderecos.json");
             escrita.write(gson.toJson(enderecos));
             escrita.close();
+            GeradorDeArquivo gerador = new GeradorDeArquivo();
+            for (var endereco : enderecos){
+                gerador.gerarJson(endereco);
+            }
         }
         System.out.println("\nTodos endereços adicionados:");
         for (var endereco : enderecos){
